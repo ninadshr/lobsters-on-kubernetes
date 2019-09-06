@@ -1,11 +1,11 @@
-apiVersion: extensions/v1beta1
+apiVersion: batch/v1
 kind: Job
 metadata:
   name: lobsters-db-schema-load
 spec:
-  selector:
-    matchLabels:
-      task: db-schema-load
+        #selector:
+        #matchLabels:
+        #task: db-schema-load
   template:
     metadata:
       name: lobsters-db-schema-load

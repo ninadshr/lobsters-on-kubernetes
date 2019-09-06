@@ -1,11 +1,11 @@
-apiVersion: extensions/v1beta1
+apiVersion: batch/v1
 kind: Job
 metadata:
   name: lobsters-db-seed
 spec:
-  selector:
-    matchLabels:
-      task: db-seed
+        #selector:
+        #matchLabels:
+        #task: db-seed
   template:
     metadata:
       name: lobsters-db-seed
